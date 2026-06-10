@@ -1,0 +1,64 @@
+<section
+  id="skills"
+  class="py-28 bg-slate-950 text-white">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <h2
+      class="text-4xl md:text-5xl font-bold text-center">
+
+      Technical Skills
+
+    </h2>
+
+    <p
+      class="text-center text-slate-400 mt-4 max-w-2xl mx-auto">
+
+      Technologies and tools used for building scalable
+      enterprise-grade web applications.
+
+    </p>
+
+    <div
+      class="grid md:grid-cols-2 xl:grid-cols-4 gap-8 mt-16">
+
+      @for(category of skillCategories; track category.title) {
+
+        <div
+          class="bg-slate-900 border border-slate-800 rounded-2xl p-6
+                 hover:border-cyan-400 transition-all duration-300">
+
+          <h3
+            class="text-xl font-semibold text-cyan-400 mb-6">
+
+            {{ category.title }}
+
+          </h3>
+
+          <div class="flex flex-wrap gap-3">
+
+            @for(skill of category.skills; track skill) {
+
+              <span
+                class="px-3 py-2 rounded-full
+                       bg-cyan-500/10
+                       text-cyan-300
+                       text-sm">
+
+                {{ skill }}
+
+              </span>
+
+            }
+
+          </div>
+
+        </div>
+
+      }
+
+    </div>
+
+  </div>
+
+</section>

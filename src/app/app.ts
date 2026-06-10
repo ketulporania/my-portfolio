@@ -1,12 +1,23 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { Navbar } from './layout/navbar/navbar';
+import { Home } from './features/home/home';
+import { About } from './features/about/about';
+import { Skills } from './features/skills/skills';
+import { Experience } from "./features/experience/experience";
+import { Projects } from './features/projects/projects';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [
+    Navbar,
+    Home,
+    About,
+    Skills,
+    Experience,
+    Projects
+  ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = signal('angular-portfolio');
 }
