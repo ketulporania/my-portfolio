@@ -5,6 +5,7 @@ import { About } from './features/about/about';
 import { Skills } from './features/skills/skills';
 import { Experience } from "./features/experience/experience";
 import { Projects } from './features/projects/projects';
+import { Contact } from './features/contact/contact';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,8 @@ import { Projects } from './features/projects/projects';
     About,
     Skills,
     Experience,
-    Projects
+    Projects,
+    Contact
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
