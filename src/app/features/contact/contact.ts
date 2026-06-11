@@ -4,11 +4,10 @@ import { Component } from '@angular/core';
   selector: 'app-contact',
   imports: [],
   templateUrl: './contact.html',
-  styleUrls: ['./contact.scss'],
+  styleUrl: './contact.scss',
 })
 export class Contact {
 
-  constructor() { }
   email = 'ketulporania@gmail.com';
   phone = '+91 8000782068';
 
