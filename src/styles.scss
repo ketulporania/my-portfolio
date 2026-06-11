@@ -42,8 +42,31 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  margin: 0;
-  font-family: Inter, sans-serif;
-  background: #0f172a;
+/* =============================================
+   ADD THESE TO YOUR styles.scss
+   ============================================= */
+
+/* Skip link — accessibility best practice */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  background: #1a1a2e;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 8px 8px;
+  font-weight: 600;
+  z-index: 9999;
+  text-decoration: none;
+  transition: top 0.2s;
+
+  &:focus {
+    top: 0;
+  }
+}
+
+/* Focus outline for keyboard navigation (accessibility) */
+*:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 2px;
 }

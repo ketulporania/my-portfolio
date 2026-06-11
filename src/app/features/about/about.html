@@ -4,32 +4,78 @@
 
   <div class="max-w-6xl mx-auto">
 
-    <h2 class="text-5xl font-bold text-center">
-      About Me
-    </h2>
+    <!-- Section Title -->
+    <h2 class="text-5xl font-bold text-center">About Me</h2>
+    <div class="w-16 h-1 bg-cyan-400 mx-auto mt-4 rounded-full"></div>
 
-    <p
-      class="max-w-3xl mx-auto text-center mt-8 text-slate-300 leading-8">
+    <!-- Stats Row — recruiters love numbers -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
 
-      <!-- Angular Developer with 3+ years of experience building
-      scalable enterprise applications using Angular,
-      TypeScript, RxJS, Signals and REST APIs.
+      <div class="text-center p-6 rounded-2xl bg-slate-900 border border-slate-800">
+        <p class="text-4xl font-bold text-cyan-400">3+</p>
+        <p class="text-slate-400 text-sm mt-1">Years Experience</p>
+      </div>
 
-      Passionate about clean architecture,
-      performance optimization and user experience. -->
+      <div class="text-center p-6 rounded-2xl bg-slate-900 border border-slate-800">
+        <p class="text-4xl font-bold text-cyan-400">3</p>
+        <p class="text-slate-400 text-sm mt-1">Enterprise Projects</p>
+      </div>
 
-      I am an Angular Developer with 3+ years of experience
-building enterprise-grade financial and business applications.
+      <div class="text-center p-6 rounded-2xl bg-slate-900 border border-slate-800">
+        <p class="text-4xl font-bold text-cyan-400">15+</p>
+        <p class="text-slate-400 text-sm mt-1">Angular Version</p>
+      </div>
 
-My expertise includes Angular, TypeScript, RxJS,
-Reactive Forms, REST API integration, authentication,
-authorization, and performance optimization.
+      <div class="text-center p-6 rounded-2xl bg-slate-900 border border-slate-800">
+        <p class="text-4xl font-bold text-cyan-400">Any</p>
+        <p class="text-slate-400 text-sm mt-1">Domain / Industry</p>
+      </div>
 
-I focus on creating scalable, maintainable, and
-user-centric applications while collaborating effectively
-within Agile development teams.
+    </div>
 
-    </p>
+    <!-- Bio Text -->
+    <div class="grid md:grid-cols-2 gap-12 mt-16 items-center">
+
+      <div>
+        <p class="text-slate-300 leading-8 text-lg">
+          I'm an Angular Developer with <span class="text-cyan-400 font-medium">3+ years of experience</span>
+          building enterprise-grade financial and business applications in the
+          <span class="text-cyan-400 font-medium">FinTech domain</span>.
+        </p>
+        <p class="text-slate-300 leading-8 text-lg mt-4">
+          My core expertise spans Angular, TypeScript, RxJS, Reactive Forms,
+          REST API integration, JWT authentication, and performance optimization.
+          I've contributed to projects handling real-world scale — from
+          <strong class="text-white">secure eKYC onboarding</strong> to
+          <strong class="text-white">role-based admin panels</strong> and
+          <strong class="text-white">analytics dashboards</strong>.
+        </p>
+        <p class="text-slate-300 leading-8 text-lg mt-4">
+          I thrive in Agile teams, care deeply about clean architecture,
+          and continuously explore modern Angular features like
+          <span class="text-cyan-400 font-medium">Signals</span> and
+          <span class="text-cyan-400 font-medium">Standalone Components</span>.
+        </p>
+      </div>
+
+      <!-- Key Strengths -->
+      <div class="space-y-4">
+
+        <h3 class="text-xl font-semibold text-white mb-6">Key Strengths</h3>
+
+        @for(strength of strengths; track strength.label) {
+          <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-cyan-500/50 transition-colors duration-300">
+            <span class="text-2xl">{{ strength.icon }}</span>
+            <div>
+              <p class="text-white font-medium">{{ strength.label }}</p>
+              <p class="text-slate-400 text-sm mt-1">{{ strength.desc }}</p>
+            </div>
+          </div>
+        }
+
+      </div>
+
+    </div>
 
   </div>
 

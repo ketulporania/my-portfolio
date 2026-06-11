@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
 })
 export class Home {
 
-  resumeLink = 'https://drive.google.com/file/d/1UavMRngLtc_Rf01Rt8Mf_CwJqRX2mmrV/view?usp=drive_link';
+  readonly resumeLink = 'https://drive.google.com/file/d/1UavMRngLtc_Rf01Rt8Mf_CwJqRX2mmrV/view?usp=drive_link';
 
-  openResume() {
-    window.open(this.resumeLink, '_blank');
+  openResume(): void {
+    window.open(this.resumeLink, '_blank', 'noopener,noreferrer');
   }
 
 }

@@ -1,7 +1,24 @@
+<!-- Skip to main content (Accessibility + SEO best practice) -->
+<a
+  href="#main-content"
+  class="skip-link"
+  aria-label="Skip to main content"
+>
+  Skip to main content
+</a>
+
+<!-- Sticky top navbar -->
 <app-navbar></app-navbar>
-<app-home></app-home>
-<app-about />
-<app-skills />
-<app-experience />
-<app-projects />
-<app-contact />     
+
+<!-- Main content landmark (important for SEO & screen readers) -->
+<main id="main-content" role="main">
+  <app-home></app-home>
+  <app-about></app-about>
+  <app-skills></app-skills>
+  <app-experience></app-experience>
+  <app-projects></app-projects>
+  <app-contact></app-contact>
+</main>
+
+<!-- Footer (add app-footer component when ready) -->
+<!-- <app-footer></app-footer> -->

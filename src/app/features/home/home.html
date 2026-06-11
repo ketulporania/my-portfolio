@@ -1,92 +1,114 @@
 <section
   id="home"
-  class="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-950 via-slate-900 to-cyan-950 relative overflow-hidden">
+  class="min-h-screen pt-20 flex items-center justify-center bg-gradient-to-br from-slate-950 via-slate-900 to-cyan-950 relative overflow-hidden">
 
-  <!-- Background Blur Effect -->
-
-  <div
-    class="absolute top-20 left-20 w-72 h-72 bg-cyan-500/20 rounded-full blur-3xl">
-  </div>
-
-  <div
-    class="absolute bottom-20 right-20 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl">
-  </div>
+  <!-- Background Blur Orbs -->
+  <div class="absolute top-20 left-20 w-72 h-72 bg-cyan-500/20 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="absolute bottom-20 right-20 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl pointer-events-none"></div>
 
   <div class="relative z-10 text-center px-6 max-w-5xl">
 
-```
-<!-- Name -->
-<h1
-  class="text-5xl md:text-7xl font-bold text-white leading-tight">
+    <!-- Availability Badge -->
+    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-sm font-medium mb-6">
+      <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+      Available for new opportunities
+    </div>
 
-  Ketul Porania
+    <!-- Name -->
+    <h1 class="text-5xl md:text-7xl font-bold text-white leading-tight">
+      Ketul Porania
+    </h1>
 
-</h1>
+    <!-- Role with Angular version highlight -->
+    <h2 class="mt-4 text-2xl md:text-3xl font-semibold text-cyan-400">
+      Angular Developer
+      <span class="text-slate-400 text-xl font-normal"> · 3+ Years Experience</span>
+    </h2>
 
-<!-- Designation -->
-<h2
-  class="mt-4 text-2xl md:text-4xl font-semibold text-cyan-400">
+    <!-- Specialisation Tags -->
+    <div class="flex flex-wrap justify-center gap-3 mt-8">
+      <span class="px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-sm">
+        Enterprise FinTech Apps
+      </span>
+      <span class="px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-sm">
+        Scalable SPAs
+      </span>
+      <span class="px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-sm">
+        Identity & Access Management
+      </span>
+      <span class="px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-sm">
+        Reporting & Analytics
+      </span>
+    </div>
 
-  Angular Developer
+    <!-- One-liner summary -->
+    <p class="mt-8 max-w-2xl mx-auto text-slate-300 text-lg leading-8">
+      Building secure, scalable Angular applications for the FinTech domain —
+      from eKYC onboarding to real-time dashboards — using
+      <span class="text-cyan-400 font-medium">Angular</span>,
+      <span class="text-cyan-400 font-medium">RxJS</span>, and
+      <span class="text-cyan-400 font-medium">TypeScript</span>.
+    </p>
 
-</h2>
+    <!-- CTA Buttons -->
+    <div class="flex flex-wrap justify-center gap-4 mt-10">
 
-<!-- Experience Badge -->
-<div
-  class="flex flex-wrap justify-center gap-3 mt-8">
+      <!-- Primary: Download Resume -->
+      <button
+        (click)="openResume()"
+        aria-label="Download Ketul Porania's resume"
+        class="bg-cyan-500 hover:bg-cyan-400 active:scale-95 transition-all duration-200 px-8 py-3 rounded-lg text-black font-semibold shadow-lg shadow-cyan-500/25">
+        Download Resume
+      </button>
 
-  <span
-    class="px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300">
+      <!-- Secondary: View Projects -->
+      <a
+        href="#projects"
+        aria-label="View my projects"
+        class="border border-cyan-500/50 hover:border-cyan-400 hover:bg-cyan-500/10 active:scale-95 transition-all duration-200 px-8 py-3 rounded-lg text-cyan-300 font-semibold">
+        View Projects
+      </a>
 
-    Enterprise Solutions
+    </div>
 
-  </span>
+    <!-- Social Links -->
+    <div class="flex justify-center gap-6 mt-10">
 
-  <span
-    class="px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300">
+      <!-- GitHub -->
+      <a
+        href="https://github.com/ketulporania"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub profile"
+        class="text-slate-400 hover:text-white transition-colors duration-200">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/>
+        </svg>
+      </a>
 
-    Scalable Web Applications
+      <!-- LinkedIn -->
+      <a
+        href="https://www.linkedin.com/in/ketul-porania-3299094b/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn profile"
+        class="text-slate-400 hover:text-blue-400 transition-colors duration-200">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M20.447 20.452H17.2v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.006V9h3.112v1.561h.044c.434-.824 1.494-1.69 3.076-1.69 3.29 0 3.895 2.165 3.895 4.978v6.603zM5.337 7.433a1.807 1.807 0 1 1 0-3.614 1.807 1.807 0 0 1 0 3.614zM6.814 20.452H3.861V9h2.953v11.452z"/>
+        </svg>
+      </a>
 
-  </span>
+      <!-- Email -->
+      <a
+        href="mailto:ketulporania@gmail.com"
+        aria-label="Send email"
+        class="text-slate-400 hover:text-cyan-400 transition-colors duration-200">
+        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25H4.5a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0-9.75 6.75L2.25 6.75"/>
+        </svg>
+      </a>
 
-  <span
-    class="px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300">
-
-    User Identity & Access Management
-
-  </span>
-
-  <span
-    class="px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300">
-
-    Reporting & Analytics
-
-  </span>
-
-</div>
-
-<!-- Summary -->
-<p
-  class="mt-8 max-w-3xl mx-auto text-slate-300 text-lg leading-8">
-
-  Building secure and scalable web applications
-  with Angular, TypeScript, and modern frontend technologies.
-
-</p>
-
-<!-- Buttons -->
-<div
-  class="flex flex-wrap justify-center gap-4 mt-10">
-
-  <button (click)="openResume()"
-    class="bg-cyan-500 hover:bg-cyan-400 transition px-6 py-3 rounded-lg text-black font-semibold">
-
-    Download Resume
-
-  </button>
-
-</div>
-```
+    </div>
 
   </div>
 

@@ -12,17 +12,20 @@ export class Experience {
     {
       company: 'DigiPay Guru Pvt. Ltd.',
       role: 'Angular Developer',
-      duration: 'Feb 2023 - May 2026',
+      duration: 'Feb 2023 – May 2026',
+      type: 'Full-time · On-site',
+      techStack: ['Angular 21', 'TypeScript', 'RxJS', 'Angular Material', 'Tailwind CSS', 'REST APIs', 'JWT'],
       achievements: [
-        'Developed secure onboarding and eKYC workflows using Angular Reactive Forms and REST APIs.',
-        'Implemented JWT authentication and route guards for secure application access.',
-        'Built reusable Angular components and validation modules.',
-        'Developed Admin Panel modules for user management and operational monitoring.',
-        'Implemented role-based access control (RBAC) and permission-driven navigation.',
-        'Created reusable data tables with filtering, sorting, search, and pagination.',
-        'Built reporting and analytics dashboards.',
-        'Optimized performance using RxJS operators, lazy loading, and API optimization.'
+        'Developed secure eKYC onboarding workflows with Angular Reactive Forms, dynamic validations, and REST API integrations — reducing manual onboarding effort significantly.',
+        'Implemented JWT authentication, HTTP interceptors, and route guards to ensure secure, role-aware application access.',
+        'Built a reusable component library of 20+ UI components, accelerating feature delivery across modules.',
+        'Architected an Admin Panel with role-based access control (RBAC), permission-driven navigation, and operational monitoring dashboards.',
+        'Created reusable data tables supporting filtering, sorting, search, and pagination — used across 10+ admin screens.',
+        'Built Reporting & Analytics dashboards for monitoring transactions and operational metrics in real time.',
+        'Optimized app performance using RxJS operators (debounceTime, switchMap), lazy-loaded routes, and OnPush change detection.',
+        'Collaborated within an Agile team using Git for version control and Jira for sprint planning.',
       ]
     }
   ];
+
 }
