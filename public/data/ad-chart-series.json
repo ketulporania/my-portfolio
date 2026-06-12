@@ -1,0 +1,38 @@
+{
+  "labels": [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun"
+  ],
+  "revenue": [
+    980000,
+    1050000,
+    1120000,
+    1180000,
+    1240000,
+    1284500
+  ],
+  "users": [
+    38000,
+    41000,
+    43000,
+    45000,
+    47000,
+    48293
+  ],
+  "sessions": [
+    220,
+    235,
+    248,
+    255,
+    265,
+    272
+  ],
+  "trafficSources": {
+    "labels": ["Direct", "Organic Search", "Referral", "Social", "Email"],
+    "values": [35, 28, 18, 12, 7]
+  }
+}

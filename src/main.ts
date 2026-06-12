@@ -1,8 +1,10 @@
 import { bootstrapApplication } from '@angular/platform-browser';
+import { Chart, registerables } from 'chart.js';
 import { appConfig } from './app/app.config';
 import { App } from './app/app';
 
+Chart.register(...registerables);
+
 bootstrapApplication(App, appConfig).catch((err) => {
-  // In production, consider sending this to a logging service (e.g. Sentry)
   console.error('Application failed to bootstrap:', err);
 });

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "p1",
+    "name": "Website Redesign",
+    "color": "#6366f1",
+    "tenantId": "acme",
+    "memberIds": [
+      "u1",
+      "u2",
+      "u3"
+    ]
+  },
+  {
+    "id": "p2",
+    "name": "Mobile App",
+    "color": "#10b981",
+    "tenantId": "acme",
+    "memberIds": [
+      "u1",
+      "u2"
+    ]
+  },
+  {
+    "id": "p3",
+    "name": "API Integration",
+    "color": "#f59e0b",
+    "tenantId": "acme",
+    "memberIds": [
+      "u1"
+    ]
+  }
+]

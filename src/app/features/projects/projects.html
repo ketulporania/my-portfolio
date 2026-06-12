@@ -1,75 +1,88 @@
-<section
-  id="projects"
-  class="py-28 bg-slate-900 text-white">
-
+<section id="projects" class="py-28 bg-slate-900 text-white">
   <div class="max-w-7xl mx-auto px-6">
-
-    <!-- Section Title -->
     <h2 class="text-4xl md:text-5xl font-bold text-center">Projects</h2>
     <div class="w-16 h-1 bg-cyan-400 mx-auto mt-4 rounded-full"></div>
 
     <p class="text-center text-slate-400 mt-6 max-w-3xl mx-auto">
-      Enterprise solutions built in the <span class="text-cyan-400">FinTech domain</span> — covering
-      onboarding, access management, reporting, and business operations.
-      Projects are under NDA, tech contributions are shared below.
+      Enterprise solutions built in the <span class="text-cyan-400">FinTech domain</span> — plus
+      interactive live demos showcasing Angular architecture patterns.
     </p>
 
-    <!-- Project Cards -->
     <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8 mt-12">
-
-      @for(project of projects; track project.title) {
-
-        <div class="bg-slate-800 rounded-2xl border border-slate-700
-                    hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-500/10
-                    transition-all duration-300 flex flex-col">
-
+      @for (project of projects; track project.id ?? project.title) {
+        <div
+          class="bg-slate-800 rounded-2xl border border-slate-700 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-500/10 transition-all duration-300 flex flex-col"
+          [style.borderColor]="project.isLiveDemo ? project.accentColor + '40' : undefined">
           <div class="p-8 flex flex-col flex-1">
-
-            <!-- Title Row -->
             <div class="flex items-start justify-between gap-2 flex-wrap">
-              <h3 class="text-lg font-semibold text-white leading-snug">
-                {{ project.title }}
-              </h3>
-              <!-- @if(project.isConfidential) {
-                <span class="flex-shrink-0 px-2 py-1 rounded-md bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-medium">
-                  🔒 NDA
-                </span>
-              } -->
-            </div>
-
-            <!-- Domain -->
-            <span class="mt-2 inline-block px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-medium w-fit">
-              {{ project.domain }}
-            </span>
-
-            <!-- Description -->
-            <p class="mt-4 text-slate-300 text-sm leading-7 flex-1">
-              {{ project.description }}
-            </p>
-
-            <!-- Impact -->
-            <div class="mt-4 p-3 rounded-lg bg-slate-700/50 border border-slate-600/50">
-              <p class="text-xs text-slate-400 font-medium uppercase tracking-wide mb-1">Impact</p>
-              <p class="text-slate-300 text-sm">{{ project.impact }}</p>
-            </div>
-
-            <!-- Tech Contributions -->
-            <div class="flex flex-wrap gap-2 mt-5">
-              @for(item of project.contributions; track item) {
-                <span class="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-300 text-xs">
-                  {{ item }}
+              <h3 class="text-lg font-semibold text-white leading-snug">{{ project.title }}</h3>
+              @if (project.isLiveDemo) {
+                <span class="live-badge">
+                  <span class="live-dot-sm"></span>
+                  Live Demo
                 </span>
               }
             </div>
 
+            @if (project.domain) {
+              <span
+                class="mt-2 inline-block px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-medium w-fit">
+                {{ project.domain }}
+              </span>
+            }
+
+            <p class="mt-4 text-slate-300 text-sm leading-7 flex-1">{{ project.description }}</p>
+
+            @if (project.impact) {
+              <div class="mt-4 p-3 rounded-lg bg-slate-700/50 border border-slate-600/50">
+                <p class="text-xs text-slate-400 font-medium uppercase tracking-wide mb-1">Impact</p>
+                <p class="text-slate-300 text-sm">{{ project.impact }}</p>
+              </div>
+            }
+
+            @if (project.highlights) {
+              <ul class="mt-4 space-y-1">
+                @for (item of project.highlights.slice(0, 3); track item) {
+                  <li class="text-slate-400 text-xs flex items-start gap-2">
+                    <span class="text-emerald-400 mt-0.5">✓</span>
+                    {{ item }}
+                  </li>
+                }
+              </ul>
+            }
+
+            <div class="flex flex-wrap gap-2 mt-5">
+              @if (project.contributions) {
+                @for (item of project.contributions; track item) {
+                  <span
+                    class="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-300 text-xs">
+                    {{ item }}
+                  </span>
+                }
+              }
+              @if (project.tags) {
+                @for (item of project.tags; track item) {
+                  <span
+                    class="px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs">
+                    {{ item }}
+                  </span>
+                }
+              }
+            </div>
+
+            @if (project.isLiveDemo && project.demoRoute) {
+              <a [routerLink]="project.demoRoute" class="btn btn-primary">
+                <span>View Live Demo</span>
+                <span class="btn-arrow">→</span>
+              </a>
+            } @else if (project.githubUrl) {
+              <a [href]="project.githubUrl" target="_blank" rel="noopener" class="btn btn-outline">
+                View Project ↗
+              </a>
+            }
           </div>
-
         </div>
-
       }
-
     </div>
-
   </div>
-
 </section>

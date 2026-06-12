@@ -1,0 +1,985 @@
+[
+  {
+    "id": "t1",
+    "title": "Design onboarding flow #1",
+    "description": "Detailed description for task 1. Includes acceptance criteria and context for the assignee.",
+    "status": "todo",
+    "priority": "low",
+    "projectId": "p1",
+    "assigneeIds": [
+      "u1",
+      "u2"
+    ],
+    "dueDate": "2025-07-01",
+    "createdAt": "2025-06-01",
+    "order": 1,
+    "tenantId": "acme",
+    "commentCount": 0,
+    "tags": [
+      "design",
+      "ux"
+    ]
+  },
+  {
+    "id": "t2",
+    "title": "Fix login bug #2",
+    "description": "Detailed description for task 2. Includes acceptance criteria and context for the assignee.",
+    "status": "todo",
+    "priority": "medium",
+    "projectId": "p2",
+    "assigneeIds": [
+      "u1"
+    ],
+    "dueDate": "2025-07-02",
+    "createdAt": "2025-06-02",
+    "order": 2,
+    "tenantId": "acme",
+    "commentCount": 1,
+    "tags": [
+      "bug",
+      "backend"
+    ]
+  },
+  {
+    "id": "t3",
+    "title": "Update API docs #3",
+    "description": "Detailed description for task 3. Includes acceptance criteria and context for the assignee.",
+    "status": "todo",
+    "priority": "high",
+    "projectId": "p3",
+    "assigneeIds": [
+      "u1",
+      "u2"
+    ],
+    "dueDate": "2025-07-03",
+    "createdAt": "2025-06-03",
+    "order": 3,
+    "tenantId": "acme",
+    "commentCount": 2,
+    "tags": [
+      "docs"
+    ]
+  },
+  {
+    "id": "t4",
+    "title": "Implement search #4",
+    "description": "Detailed description for task 4. Includes acceptance criteria and context for the assignee.",
+    "status": "todo",
+    "priority": "low",
+    "projectId": "p1",
+    "assigneeIds": [
+      "u1"
+    ],
+    "dueDate": "2025-07-04",
+    "createdAt": "2025-06-04",
+    "order": 4,
+    "tenantId": "acme",
+    "commentCount": 3,
+    "tags": [
+      "feature"
+    ]
+  },
+  {
+    "id": "t5",
+    "title": "Write unit tests #5",
+    "description": "Detailed description for task 5. Includes acceptance criteria and context for the assignee.",
+    "status": "todo",
+    "priority": "medium",
+    "projectId": "p2",
+    "assigneeIds": [
+      "u1",
+      "u2"
+    ],
+    "dueDate": "2025-07-05",
+    "createdAt": "2025-06-05",
+    "order": 5,
+    "tenantId": "acme",
+    "commentCount": 4,
+    "tags": [
+      "testing"
+    ]
+  },
+  {
+    "id": "t6",
+    "title": "Review PR #42 #6",
+    "description": "Detailed description for task 6. Includes acceptance criteria and context for the assignee.",
+    "status": "todo",
+    "priority": "high",
+    "projectId": "p3",
+    "assigneeIds": [
+      "u1"
+    ],
+    "dueDate": "2025-07-06",
+    "createdAt": "2025-06-06",
+    "order": 6,
+    "tenantId": "acme",
+    "commentCount": 0,
+    "tags": [
+      "review"
+    ]
+  },
+  {
+    "id": "t7",
+    "title": "Deploy staging #7",
+    "description": "Detailed description for task 7. Includes acceptance criteria and context for the assignee.",
+    "status": "todo",
+    "priority": "low",
+    "projectId": "p1",
+    "assigneeIds": [
+      "u1",
+      "u2"
+    ],
+    "dueDate": "2025-07-07",
+    "createdAt": "2025-06-07",
+    "order": 7,
+    "tenantId": "acme",
+    "commentCount": 1,
+    "tags": [
+      "devops"
+    ]
+  },
+  {
+    "id": "t8",
+    "title": "Optimize queries #8",
+    "description": "Detailed description for task 8. Includes acceptance criteria and context for the assignee.",
+    "status": "todo",
+    "priority": "medium",
+    "projectId": "p2",
+    "assigneeIds": [
+      "u1"
+    ],
+    "dueDate": "2025-07-08",
+    "createdAt": "2025-06-08",
+    "order": 8,
+    "tenantId": "acme",
+    "commentCount": 2,
+    "tags": [
+      "performance"
+    ]
+  },
+  {
+    "id": "t9",
+    "title": "Create wireframes #9",
+    "description": "Detailed description for task 9. Includes acceptance criteria and context for the assignee.",
+    "status": "todo",
+    "priority": "high",
+    "projectId": "p3",
+    "assigneeIds": [
+      "u1",
+      "u2"
+    ],
+    "dueDate": "2025-07-09",
+    "createdAt": "2025-06-09",
+    "order": 9,
+    "tenantId": "acme",
+    "commentCount": 3,
+    "tags": [
+      "design"
+    ]
+  },
+  {
+    "id": "t10",
+    "title": "Setup CI pipeline #10",
+    "description": "Detailed description for task 10. Includes acceptance criteria and context for the assignee.",
+    "status": "todo",
+    "priority": "low",
+    "projectId": "p1",
+    "assigneeIds": [
+      "u1"
+    ],
+    "dueDate": "2025-07-10",
+    "createdAt": "2025-06-10",
+    "order": 10,
+    "tenantId": "acme",
+    "commentCount": 4,
+    "tags": [
+      "infra"
+    ]
+  },
+  {
+    "id": "t11",
+    "title": "Refactor auth module #11",
+    "description": "Detailed description for task 11. Includes acceptance criteria and context for the assignee.",
+    "status": "todo",
+    "priority": "medium",
+    "projectId": "p2",
+    "assigneeIds": [
+      "u1",
+      "u2"
+    ],
+    "dueDate": "2025-07-11",
+    "createdAt": "2025-06-11",
+    "order": 11,
+    "tenantId": "acme",
+    "commentCount": 0,
+    "tags": [
+      "refactor"
+    ]
+  },
+  {
+    "id": "t12",
+    "title": "Add dark mode #12",
+    "description": "Detailed description for task 12. Includes acceptance criteria and context for the assignee.",
+    "status": "todo",
+    "priority": "high",
+    "projectId": "p3",
+    "assigneeIds": [
+      "u1"
+    ],
+    "dueDate": "2025-07-12",
+    "createdAt": "2025-06-12",
+    "order": 12,
+    "tenantId": "acme",
+    "commentCount": 1,
+    "tags": [
+      "ui"
+    ]
+  },
+  {
+    "id": "t13",
+    "title": "Migrate database #13",
+    "description": "Detailed description for task 13. Includes acceptance criteria and context for the assignee.",
+    "status": "todo",
+    "priority": "low",
+    "projectId": "p1",
+    "assigneeIds": [
+      "u1",
+      "u2"
+    ],
+    "dueDate": "2025-07-13",
+    "createdAt": "2025-06-13",
+    "order": 13,
+    "tenantId": "acme",
+    "commentCount": 2,
+    "tags": [
+      "database"
+    ]
+  },
+  {
+    "id": "t14",
+    "title": "Performance audit #14",
+    "description": "Detailed description for task 14. Includes acceptance criteria and context for the assignee.",
+    "status": "todo",
+    "priority": "medium",
+    "projectId": "p2",
+    "assigneeIds": [
+      "u1"
+    ],
+    "dueDate": "2025-07-14",
+    "createdAt": "2025-06-14",
+    "order": 14,
+    "tenantId": "acme",
+    "commentCount": 3,
+    "tags": [
+      "audit"
+    ]
+  },
+  {
+    "id": "t15",
+    "title": "User research #15",
+    "description": "Detailed description for task 15. Includes acceptance criteria and context for the assignee.",
+    "status": "todo",
+    "priority": "high",
+    "projectId": "p3",
+    "assigneeIds": [
+      "u1",
+      "u2"
+    ],
+    "dueDate": "2025-07-15",
+    "createdAt": "2025-06-15",
+    "order": 15,
+    "tenantId": "acme",
+    "commentCount": 4,
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "id": "t16",
+    "title": "Build notification system #16",
+    "description": "Detailed description for task 16. Includes acceptance criteria and context for the assignee.",
+    "status": "in-progress",
+    "priority": "low",
+    "projectId": "p1",
+    "assigneeIds": [
+      "u1"
+    ],
+    "dueDate": "2025-07-16",
+    "createdAt": "2025-06-16",
+    "order": 16,
+    "tenantId": "acme",
+    "commentCount": 0,
+    "tags": [
+      "design",
+      "ux"
+    ]
+  },
+  {
+    "id": "t17",
+    "title": "Integrate payment gateway #17",
+    "description": "Detailed description for task 17. Includes acceptance criteria and context for the assignee.",
+    "status": "in-progress",
+    "priority": "medium",
+    "projectId": "p2",
+    "assigneeIds": [
+      "u1",
+      "u2"
+    ],
+    "dueDate": "2025-07-17",
+    "createdAt": "2025-06-17",
+    "order": 17,
+    "tenantId": "acme",
+    "commentCount": 1,
+    "tags": [
+      "bug",
+      "backend"
+    ]
+  },
+  {
+    "id": "t18",
+    "title": "Fix memory leak #18",
+    "description": "Detailed description for task 18. Includes acceptance criteria and context for the assignee.",
+    "status": "in-progress",
+    "priority": "high",
+    "projectId": "p3",
+    "assigneeIds": [
+      "u1"
+    ],
+    "dueDate": "2025-07-18",
+    "createdAt": "2025-06-18",
+    "order": 18,
+    "tenantId": "acme",
+    "commentCount": 2,
+    "tags": [
+      "docs"
+    ]
+  },
+  {
+    "id": "t19",
+    "title": "Update dependencies #19",
+    "description": "Detailed description for task 19. Includes acceptance criteria and context for the assignee.",
+    "status": "in-progress",
+    "priority": "low",
+    "projectId": "p1",
+    "assigneeIds": [
+      "u1",
+      "u2"
+    ],
+    "dueDate": "2025-07-19",
+    "createdAt": "2025-06-19",
+    "order": 19,
+    "tenantId": "acme",
+    "commentCount": 3,
+    "tags": [
+      "feature"
+    ]
+  },
+  {
+    "id": "t20",
+    "title": "Create admin panel #20",
+    "description": "Detailed description for task 20. Includes acceptance criteria and context for the assignee.",
+    "status": "in-progress",
+    "priority": "medium",
+    "projectId": "p2",
+    "assigneeIds": [
+      "u1"
+    ],
+    "dueDate": "2025-07-20",
+    "createdAt": "2025-06-20",
+    "order": 20,
+    "tenantId": "acme",
+    "commentCount": 4,
+    "tags": [
+      "testing"
+    ]
+  },
+  {
+    "id": "t21",
+    "title": "Design onboarding flow #21",
+    "description": "Detailed description for task 21. Includes acceptance criteria and context for the assignee.",
+    "status": "in-progress",
+    "priority": "high",
+    "projectId": "p3",
+    "assigneeIds": [
+      "u1",
+      "u2"
+    ],
+    "dueDate": "2025-07-21",
+    "createdAt": "2025-06-01",
+    "order": 21,
+    "tenantId": "acme",
+    "commentCount": 0,
+    "tags": [
+      "review"
+    ]
+  },
+  {
+    "id": "t22",
+    "title": "Fix login bug #22",
+    "description": "Detailed description for task 22. Includes acceptance criteria and context for the assignee.",
+    "status": "in-progress",
+    "priority": "low",
+    "projectId": "p1",
+    "assigneeIds": [
+      "u1"
+    ],
+    "dueDate": "2025-07-22",
+    "createdAt": "2025-06-02",
+    "order": 22,
+    "tenantId": "acme",
+    "commentCount": 1,
+    "tags": [
+      "devops"
+    ]
+  },
+  {
+    "id": "t23",
+    "title": "Update API docs #23",
+    "description": "Detailed description for task 23. Includes acceptance criteria and context for the assignee.",
+    "status": "in-progress",
+    "priority": "medium",
+    "projectId": "p2",
+    "assigneeIds": [
+      "u1",
+      "u2"
+    ],
+    "dueDate": "2025-07-23",
+    "createdAt": "2025-06-03",
+    "order": 23,
+    "tenantId": "acme",
+    "commentCount": 2,
+    "tags": [
+      "performance"
+    ]
+  },
+  {
+    "id": "t24",
+    "title": "Implement search #24",
+    "description": "Detailed description for task 24. Includes acceptance criteria and context for the assignee.",
+    "status": "in-progress",
+    "priority": "high",
+    "projectId": "p3",
+    "assigneeIds": [
+      "u1"
+    ],
+    "dueDate": "2025-07-24",
+    "createdAt": "2025-06-04",
+    "order": 24,
+    "tenantId": "acme",
+    "commentCount": 3,
+    "tags": [
+      "design"
+    ]
+  },
+  {
+    "id": "t25",
+    "title": "Write unit tests #25",
+    "description": "Detailed description for task 25. Includes acceptance criteria and context for the assignee.",
+    "status": "in-progress",
+    "priority": "low",
+    "projectId": "p1",
+    "assigneeIds": [
+      "u1",
+      "u2"
+    ],
+    "dueDate": "2025-07-25",
+    "createdAt": "2025-06-05",
+    "order": 25,
+    "tenantId": "acme",
+    "commentCount": 4,
+    "tags": [
+      "infra"
+    ]
+  },
+  {
+    "id": "t26",
+    "title": "Review PR #42 #26",
+    "description": "Detailed description for task 26. Includes acceptance criteria and context for the assignee.",
+    "status": "in-progress",
+    "priority": "medium",
+    "projectId": "p2",
+    "assigneeIds": [
+      "u1"
+    ],
+    "dueDate": "2025-07-26",
+    "createdAt": "2025-06-06",
+    "order": 26,
+    "tenantId": "acme",
+    "commentCount": 0,
+    "tags": [
+      "refactor"
+    ]
+  },
+  {
+    "id": "t27",
+    "title": "Deploy staging #27",
+    "description": "Detailed description for task 27. Includes acceptance criteria and context for the assignee.",
+    "status": "in-progress",
+    "priority": "high",
+    "projectId": "p3",
+    "assigneeIds": [
+      "u1",
+      "u2"
+    ],
+    "dueDate": "2025-07-27",
+    "createdAt": "2025-06-07",
+    "order": 27,
+    "tenantId": "acme",
+    "commentCount": 1,
+    "tags": [
+      "ui"
+    ]
+  },
+  {
+    "id": "t28",
+    "title": "Optimize queries #28",
+    "description": "Detailed description for task 28. Includes acceptance criteria and context for the assignee.",
+    "status": "in-review",
+    "priority": "low",
+    "projectId": "p1",
+    "assigneeIds": [
+      "u1"
+    ],
+    "dueDate": "2025-07-28",
+    "createdAt": "2025-06-08",
+    "order": 28,
+    "tenantId": "acme",
+    "commentCount": 2,
+    "tags": [
+      "database"
+    ]
+  },
+  {
+    "id": "t29",
+    "title": "Create wireframes #29",
+    "description": "Detailed description for task 29. Includes acceptance criteria and context for the assignee.",
+    "status": "in-review",
+    "priority": "medium",
+    "projectId": "p2",
+    "assigneeIds": [
+      "u1",
+      "u2"
+    ],
+    "dueDate": "2025-07-01",
+    "createdAt": "2025-06-09",
+    "order": 29,
+    "tenantId": "acme",
+    "commentCount": 3,
+    "tags": [
+      "audit"
+    ]
+  },
+  {
+    "id": "t30",
+    "title": "Setup CI pipeline #30",
+    "description": "Detailed description for task 30. Includes acceptance criteria and context for the assignee.",
+    "status": "in-review",
+    "priority": "high",
+    "projectId": "p3",
+    "assigneeIds": [
+      "u1"
+    ],
+    "dueDate": "2025-07-02",
+    "createdAt": "2025-06-10",
+    "order": 30,
+    "tenantId": "acme",
+    "commentCount": 4,
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "id": "t31",
+    "title": "Refactor auth module #31",
+    "description": "Detailed description for task 31. Includes acceptance criteria and context for the assignee.",
+    "status": "in-review",
+    "priority": "low",
+    "projectId": "p1",
+    "assigneeIds": [
+      "u1",
+      "u2"
+    ],
+    "dueDate": "2025-07-03",
+    "createdAt": "2025-06-11",
+    "order": 31,
+    "tenantId": "acme",
+    "commentCount": 0,
+    "tags": [
+      "design",
+      "ux"
+    ]
+  },
+  {
+    "id": "t32",
+    "title": "Add dark mode #32",
+    "description": "Detailed description for task 32. Includes acceptance criteria and context for the assignee.",
+    "status": "in-review",
+    "priority": "medium",
+    "projectId": "p2",
+    "assigneeIds": [
+      "u1"
+    ],
+    "dueDate": "2025-07-04",
+    "createdAt": "2025-06-12",
+    "order": 32,
+    "tenantId": "acme",
+    "commentCount": 1,
+    "tags": [
+      "bug",
+      "backend"
+    ]
+  },
+  {
+    "id": "t33",
+    "title": "Migrate database #33",
+    "description": "Detailed description for task 33. Includes acceptance criteria and context for the assignee.",
+    "status": "in-review",
+    "priority": "high",
+    "projectId": "p3",
+    "assigneeIds": [
+      "u1",
+      "u2"
+    ],
+    "dueDate": "2025-07-05",
+    "createdAt": "2025-06-13",
+    "order": 33,
+    "tenantId": "acme",
+    "commentCount": 2,
+    "tags": [
+      "docs"
+    ]
+  },
+  {
+    "id": "t34",
+    "title": "Performance audit #34",
+    "description": "Detailed description for task 34. Includes acceptance criteria and context for the assignee.",
+    "status": "in-review",
+    "priority": "low",
+    "projectId": "p1",
+    "assigneeIds": [
+      "u1"
+    ],
+    "dueDate": "2025-07-06",
+    "createdAt": "2025-06-14",
+    "order": 34,
+    "tenantId": "acme",
+    "commentCount": 3,
+    "tags": [
+      "feature"
+    ]
+  },
+  {
+    "id": "t35",
+    "title": "User research #35",
+    "description": "Detailed description for task 35. Includes acceptance criteria and context for the assignee.",
+    "status": "in-review",
+    "priority": "medium",
+    "projectId": "p2",
+    "assigneeIds": [
+      "u1",
+      "u2"
+    ],
+    "dueDate": "2025-07-07",
+    "createdAt": "2025-06-15",
+    "order": 35,
+    "tenantId": "acme",
+    "commentCount": 4,
+    "tags": [
+      "testing"
+    ]
+  },
+  {
+    "id": "t36",
+    "title": "Build notification system #36",
+    "description": "Detailed description for task 36. Includes acceptance criteria and context for the assignee.",
+    "status": "done",
+    "priority": "high",
+    "projectId": "p3",
+    "assigneeIds": [
+      "u1"
+    ],
+    "dueDate": "2025-07-08",
+    "createdAt": "2025-06-16",
+    "order": 36,
+    "tenantId": "acme",
+    "commentCount": 0,
+    "tags": [
+      "review"
+    ]
+  },
+  {
+    "id": "t37",
+    "title": "Integrate payment gateway #37",
+    "description": "Detailed description for task 37. Includes acceptance criteria and context for the assignee.",
+    "status": "done",
+    "priority": "low",
+    "projectId": "p1",
+    "assigneeIds": [
+      "u1",
+      "u2"
+    ],
+    "dueDate": "2025-07-09",
+    "createdAt": "2025-06-17",
+    "order": 37,
+    "tenantId": "acme",
+    "commentCount": 1,
+    "tags": [
+      "devops"
+    ]
+  },
+  {
+    "id": "t38",
+    "title": "Fix memory leak #38",
+    "description": "Detailed description for task 38. Includes acceptance criteria and context for the assignee.",
+    "status": "done",
+    "priority": "medium",
+    "projectId": "p2",
+    "assigneeIds": [
+      "u1"
+    ],
+    "dueDate": "2025-07-10",
+    "createdAt": "2025-06-18",
+    "order": 38,
+    "tenantId": "acme",
+    "commentCount": 2,
+    "tags": [
+      "performance"
+    ]
+  },
+  {
+    "id": "t39",
+    "title": "Update dependencies #39",
+    "description": "Detailed description for task 39. Includes acceptance criteria and context for the assignee.",
+    "status": "done",
+    "priority": "high",
+    "projectId": "p3",
+    "assigneeIds": [
+      "u1",
+      "u2"
+    ],
+    "dueDate": "2025-07-11",
+    "createdAt": "2025-06-19",
+    "order": 39,
+    "tenantId": "acme",
+    "commentCount": 3,
+    "tags": [
+      "design"
+    ]
+  },
+  {
+    "id": "t40",
+    "title": "Create admin panel #40",
+    "description": "Detailed description for task 40. Includes acceptance criteria and context for the assignee.",
+    "status": "done",
+    "priority": "low",
+    "projectId": "p1",
+    "assigneeIds": [
+      "u1"
+    ],
+    "dueDate": "2025-07-12",
+    "createdAt": "2025-06-20",
+    "order": 40,
+    "tenantId": "acme",
+    "commentCount": 4,
+    "tags": [
+      "infra"
+    ]
+  },
+  {
+    "id": "t41",
+    "title": "Design onboarding flow #41",
+    "description": "Detailed description for task 41. Includes acceptance criteria and context for the assignee.",
+    "status": "done",
+    "priority": "medium",
+    "projectId": "p2",
+    "assigneeIds": [
+      "u1",
+      "u2"
+    ],
+    "dueDate": "2025-07-13",
+    "createdAt": "2025-06-01",
+    "order": 41,
+    "tenantId": "acme",
+    "commentCount": 0,
+    "tags": [
+      "refactor"
+    ]
+  },
+  {
+    "id": "t42",
+    "title": "Fix login bug #42",
+    "description": "Detailed description for task 42. Includes acceptance criteria and context for the assignee.",
+    "status": "done",
+    "priority": "high",
+    "projectId": "p3",
+    "assigneeIds": [
+      "u1"
+    ],
+    "dueDate": "2025-07-14",
+    "createdAt": "2025-06-02",
+    "order": 42,
+    "tenantId": "acme",
+    "commentCount": 1,
+    "tags": [
+      "ui"
+    ]
+  },
+  {
+    "id": "t43",
+    "title": "Update API docs #43",
+    "description": "Detailed description for task 43. Includes acceptance criteria and context for the assignee.",
+    "status": "done",
+    "priority": "low",
+    "projectId": "p1",
+    "assigneeIds": [
+      "u1",
+      "u2"
+    ],
+    "dueDate": "2025-07-15",
+    "createdAt": "2025-06-03",
+    "order": 43,
+    "tenantId": "acme",
+    "commentCount": 2,
+    "tags": [
+      "database"
+    ]
+  },
+  {
+    "id": "t44",
+    "title": "Implement search #44",
+    "description": "Detailed description for task 44. Includes acceptance criteria and context for the assignee.",
+    "status": "done",
+    "priority": "medium",
+    "projectId": "p2",
+    "assigneeIds": [
+      "u1"
+    ],
+    "dueDate": "2025-07-16",
+    "createdAt": "2025-06-04",
+    "order": 44,
+    "tenantId": "acme",
+    "commentCount": 3,
+    "tags": [
+      "audit"
+    ]
+  },
+  {
+    "id": "t45",
+    "title": "Write unit tests #45",
+    "description": "Detailed description for task 45. Includes acceptance criteria and context for the assignee.",
+    "status": "done",
+    "priority": "high",
+    "projectId": "p3",
+    "assigneeIds": [
+      "u1",
+      "u2"
+    ],
+    "dueDate": "2025-07-17",
+    "createdAt": "2025-06-05",
+    "order": 45,
+    "tenantId": "acme",
+    "commentCount": 4,
+    "tags": [
+      "research"
+    ]
+  },
+  {
+    "id": "t46",
+    "title": "Review PR #42 #46",
+    "description": "Detailed description for task 46. Includes acceptance criteria and context for the assignee.",
+    "status": "done",
+    "priority": "low",
+    "projectId": "p1",
+    "assigneeIds": [
+      "u1"
+    ],
+    "dueDate": "2025-07-18",
+    "createdAt": "2025-06-06",
+    "order": 46,
+    "tenantId": "acme",
+    "commentCount": 0,
+    "tags": [
+      "design",
+      "ux"
+    ]
+  },
+  {
+    "id": "t47",
+    "title": "Deploy staging #47",
+    "description": "Detailed description for task 47. Includes acceptance criteria and context for the assignee.",
+    "status": "done",
+    "priority": "medium",
+    "projectId": "p2",
+    "assigneeIds": [
+      "u1",
+      "u2"
+    ],
+    "dueDate": "2025-07-19",
+    "createdAt": "2025-06-07",
+    "order": 47,
+    "tenantId": "acme",
+    "commentCount": 1,
+    "tags": [
+      "bug",
+      "backend"
+    ]
+  },
+  {
+    "id": "t48",
+    "title": "Optimize queries #48",
+    "description": "Detailed description for task 48. Includes acceptance criteria and context for the assignee.",
+    "status": "done",
+    "priority": "high",
+    "projectId": "p3",
+    "assigneeIds": [
+      "u1"
+    ],
+    "dueDate": "2025-07-20",
+    "createdAt": "2025-06-08",
+    "order": 48,
+    "tenantId": "acme",
+    "commentCount": 2,
+    "tags": [
+      "docs"
+    ]
+  },
+  {
+    "id": "t49",
+    "title": "Create wireframes #49",
+    "description": "Detailed description for task 49. Includes acceptance criteria and context for the assignee.",
+    "status": "done",
+    "priority": "low",
+    "projectId": "p1",
+    "assigneeIds": [
+      "u1",
+      "u2"
+    ],
+    "dueDate": "2025-07-21",
+    "createdAt": "2025-06-09",
+    "order": 49,
+    "tenantId": "acme",
+    "commentCount": 3,
+    "tags": [
+      "feature"
+    ]
+  },
+  {
+    "id": "t50",
+    "title": "Setup CI pipeline #50",
+    "description": "Detailed description for task 50. Includes acceptance criteria and context for the assignee.",
+    "status": "done",
+    "priority": "medium",
+    "projectId": "p2",
+    "assigneeIds": [
+      "u1"
+    ],
+    "dueDate": "2025-07-22",
+    "createdAt": "2025-06-10",
+    "order": 50,
+    "tenantId": "acme",
+    "commentCount": 4,
+    "tags": [
+      "testing"
+    ]
+  }
+]

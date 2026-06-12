@@ -1,14 +1,32 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
+
+export interface PortfolioProject {
+  id?: string;
+  title: string;
+  domain?: string;
+  isConfidential?: boolean;
+  description: string;
+  impact?: string;
+  contributions?: string[];
+  tags?: string[];
+  demoRoute?: string;
+  githubUrl?: string;
+  featured?: boolean;
+  isLiveDemo?: boolean;
+  previewImage?: string;
+  accentColor?: string;
+  highlights?: string[];
+}
 
 @Component({
   selector: 'app-projects',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './projects.html',
-  styleUrl: './projects.scss'
+  styleUrl: './projects.scss',
 })
 export class Projects {
-
-  projects = [
+  projects: PortfolioProject[] = [
     {
       title: 'Financial Onboarding & eKYC Platform',
       domain: 'FinTech',
@@ -23,7 +41,7 @@ export class Projects {
         'Route Guards',
         'REST API Integration',
         'Reusable Components',
-      ]
+      ],
     },
     {
       title: 'Admin & Role Management System',
@@ -39,7 +57,7 @@ export class Projects {
         'Reusable Data Tables',
         'Search & Pagination',
         'Angular CDK',
-      ]
+      ],
     },
     {
       title: 'Reporting & Analytics Dashboard',
@@ -55,8 +73,47 @@ export class Projects {
         'OnPush Change Detection',
         'API Optimization',
         'Angular Material',
-      ]
-    }
+      ],
+    },
+    {
+      id: 'analytics-dashboard',
+      title: 'Real-Time Analytics Dashboard',
+      description:
+        'Live metrics dashboard with WebSocket-simulated data streams, NgRx state management, OnPush change detection, and CDK Virtual Scroll.',
+      tags: ['Angular 20', 'NgRx', 'RxJS', 'TypeScript', 'Tailwind CSS'],
+      demoRoute: '/projects/analytics-dashboard',
+      githubUrl: 'https://github.com/ketulporania/analytics-dashboard',
+      featured: true,
+      isLiveDemo: true,
+      previewImage: 'assets/previews/analytics-dashboard.png',
+      accentColor: '#6366f1',
+      highlights: [
+        'RxJS interval stream simulating live WebSocket data',
+        'Full NgRx cycle — Actions → Effects → Reducers → Selectors',
+        'OnPush on every component, async pipe throughout',
+        'CDK Virtual Scroll on 200-item activity feed',
+        'Route guard + JWT simulation via localStorage',
+      ],
+    },
+    {
+      id: 'task-platform',
+      title: 'Multi-Tenant Task Platform',
+      description:
+        'Role-based Kanban board with drag-and-drop, multi-tenancy, optimistic updates, CanDeactivate guard, and per-tenant theming.',
+      tags: ['Angular 20', 'NgRx Entity', 'CDK DragDrop', 'TypeScript', 'Tailwind CSS'],
+      demoRoute: '/projects/task-platform',
+      githubUrl: 'https://github.com/ketulporania/task-platform',
+      featured: true,
+      isLiveDemo: true,
+      previewImage: 'assets/previews/task-platform.png',
+      accentColor: '#10b981',
+      highlights: [
+        'CDK DragDrop Kanban with optimistic update + rollback',
+        '@ngrx/entity adapter for normalized task state',
+        'RoleGuard (Admin/Member/Viewer), CanDeactivate, TenantResolver',
+        'HTTP Interceptor injecting X-Tenant-ID header',
+        'Per-tenant CSS variable theming applied at runtime',
+      ],
+    },
   ];
-
 }

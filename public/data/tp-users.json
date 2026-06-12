@@ -1,0 +1,34 @@
+[
+  {
+    "id": "u1",
+    "name": "Ketul Porania",
+    "email": "admin@acme.com",
+    "password": "admin123",
+    "role": "admin",
+    "tenantId": "acme"
+  },
+  {
+    "id": "u2",
+    "name": "Priya Shah",
+    "email": "member@acme.com",
+    "password": "member123",
+    "role": "member",
+    "tenantId": "acme"
+  },
+  {
+    "id": "u3",
+    "name": "Dev Viewer",
+    "email": "viewer@acme.com",
+    "password": "viewer123",
+    "role": "viewer",
+    "tenantId": "acme"
+  },
+  {
+    "id": "u4",
+    "name": "John Admin",
+    "email": "admin@globex.com",
+    "password": "admin123",
+    "role": "admin",
+    "tenantId": "globex"
+  }
+]

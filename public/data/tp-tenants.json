@@ -1,0 +1,20 @@
+[
+  {
+    "id": "acme",
+    "name": "Acme Corp",
+    "primaryColor": "#6366f1",
+    "plan": "pro"
+  },
+  {
+    "id": "globex",
+    "name": "Globex Inc",
+    "primaryColor": "#10b981",
+    "plan": "starter"
+  },
+  {
+    "id": "initech",
+    "name": "Initech",
+    "primaryColor": "#f59e0b",
+    "plan": "pro"
+  }
+]
