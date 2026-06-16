@@ -15,6 +15,7 @@ export class Skills {
       title: 'Angular & Frontend',
       skills: [
         { name: 'Angular 21', level: 'Expert' },
+        { name: 'Next JS', level: 'Expert' },
         { name: 'TypeScript', level: 'Expert' },
         { name: 'RxJS', level: 'Expert' },
         { name: 'Angular Material', level: 'Expert' },
