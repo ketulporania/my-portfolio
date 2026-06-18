@@ -11,10 +11,10 @@ export class Experience {
   experiences = [
     {
       company: 'DigiPay Guru Pvt. Ltd.',
-      role: 'Angular Developer + experience with Next.js',
+      role: 'Full Stack Developer',
       duration: 'Feb 2023 – May 2026',
       type: 'Full-time · On-site',
-      techStack: ['Angular 21', 'Next JS', 'TypeScript', 'RxJS', 'Angular Material', 'Tailwind CSS', 'REST APIs', 'JWT'],
+      techStack: ['Angular', 'TypeScript', 'Javascript', 'Node.js', 'Express', 'RxJS', 'Tailwind CSS', 'REST APIs', 'JWT'],
       achievements: [
         'Developed secure eKYC onboarding workflows with Angular Reactive Forms, dynamic validations, and REST API integrations — reducing manual onboarding effort significantly.',
         'Implemented JWT authentication, HTTP interceptors, and route guards to ensure secure, role-aware application access.',

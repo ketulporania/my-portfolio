@@ -12,17 +12,15 @@ export class Skills {
   skillCategories = [
     {
       icon: '🅰️',
-      title: 'Angular & Frontend',
+      title: 'Frontend',
       skills: [
-        { name: 'Angular 21', level: 'Expert' },
-        { name: 'Next JS', level: 'Expert' },
+        { name: 'Angular', level: 'Expert' },
+        { name: 'JavaScript', level: 'Advanced' },
         { name: 'TypeScript', level: 'Expert' },
         { name: 'RxJS', level: 'Expert' },
-        { name: 'Angular Material', level: 'Expert' },
         { name: 'Reactive Forms', level: 'Expert' },
         { name: 'Tailwind CSS', level: 'Advanced' },
         { name: 'Signals', level: 'Advanced' },
-        { name: 'JavaScript', level: 'Advanced' },
         { name: 'HTML / CSS', level: 'Expert' },
       ]
     },
@@ -44,10 +42,10 @@ export class Skills {
       title: 'Backend & APIs',
       skills: [
         { name: 'REST APIs', level: 'Expert' },
+        { name: 'Node.js', level: 'Expert' },
+        { name: 'Middleware', level: 'Expert' },
         { name: 'JWT Authentication', level: 'Expert' },
         { name: 'RBAC', level: 'Expert' },
-        { name: 'Node.js', level: 'Intermediate' },
-        { name: 'Middleware', level: 'Intermediate' },
       ]
     },
     {
@@ -67,10 +65,10 @@ export class Skills {
 
   getLevelColor(level: string): string {
     switch (level) {
-      case 'Expert':       return 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/30';
-      case 'Advanced':     return 'bg-blue-500/20 text-blue-300 border border-blue-500/30';
+      case 'Expert': return 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/30';
+      case 'Advanced': return 'bg-blue-500/20 text-blue-300 border border-blue-500/30';
       case 'Intermediate': return 'bg-slate-500/20 text-slate-300 border border-slate-500/30';
-      default:             return 'bg-slate-500/20 text-slate-400';
+      default: return 'bg-slate-500/20 text-slate-400';
     }
   }
 
