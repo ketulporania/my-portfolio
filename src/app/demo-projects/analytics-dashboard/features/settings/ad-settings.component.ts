@@ -50,6 +50,7 @@ import { logout } from '../../store/auth/auth.actions';
       .main {
         flex: 1;
         padding: 24px;
+        min-width: 0;
       }
       h1 {
         margin: 0 0 24px;
@@ -86,6 +87,21 @@ import { logout } from '../../store/auth/auth.actions';
         color: #ef4444;
         border-radius: 8px;
         cursor: pointer;
+      }
+
+      @media (max-width: 768px) {
+        .main {
+          padding: 16px;
+        }
+
+        h1 {
+          font-size: 18px;
+        }
+
+        .settings-card {
+          max-width: none;
+          padding: 16px;
+        }
       }
     `,
   ],

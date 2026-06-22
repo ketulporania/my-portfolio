@@ -54,6 +54,8 @@ import { restoreSession } from '../../store/auth/auth.actions';
         justify-content: center;
         background: #0a0e1a;
         font-family: 'Inter', sans-serif;
+        padding: 16px;
+        box-sizing: border-box;
       }
       .card {
         width: 100%;
@@ -62,6 +64,7 @@ import { restoreSession } from '../../store/auth/auth.actions';
         background: #1e293b;
         border-radius: 16px;
         border: 1px solid rgba(99, 102, 241, 0.25);
+        box-sizing: border-box;
       }
       h1 {
         color: #f1f5f9;
@@ -128,6 +131,12 @@ import { restoreSession } from '../../store/auth/auth.actions';
         color: #818cf8;
         font-size: 11px;
         cursor: pointer;
+      }
+
+      @media (max-width: 480px) {
+        .card {
+          padding: 24px;
+        }
       }
     `,
   ],

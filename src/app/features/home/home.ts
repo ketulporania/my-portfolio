@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class Home {
 
-  readonly resumeLink = 'https://drive.google.com/file/d/1B7FDZIikch2LQolaoJuLg-1RiVtCOQCF/view?usp=sharing';
+  readonly resumeLink = 'https://drive.google.com/file/d/1IyMhK3SSIRtsA6LTjuEkEw9kYp5410MV/view?usp=drive_link';
 
   openResume(): void {
     window.open(this.resumeLink, '_blank', 'noopener,noreferrer');

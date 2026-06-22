@@ -10,7 +10,7 @@ export interface TpUiState {
 export const initialState: TpUiState = {
   taskModalOpen: false,
   selectedTaskId: null,
-  sidebarCollapsed: false,
+  sidebarCollapsed: true,
 };
 
 export const tpUiReducer = createReducer(
@@ -19,5 +19,6 @@ export const tpUiReducer = createReducer(
   on(UiActions.closeTaskModal, (s) => ({ ...s, taskModalOpen: false })),
   on(UiActions.openTaskDetail, (s, { taskId }) => ({ ...s, selectedTaskId: taskId })),
   on(UiActions.closeTaskDetail, (s) => ({ ...s, selectedTaskId: null })),
-  on(UiActions.toggleSidebar, (s) => ({ ...s, sidebarCollapsed: !s.sidebarCollapsed }))
+  on(UiActions.toggleSidebar, (s) => ({ ...s, sidebarCollapsed: !s.sidebarCollapsed })),
+  on(UiActions.closeSidebar, (s) => ({ ...s, sidebarCollapsed: true }))
 );

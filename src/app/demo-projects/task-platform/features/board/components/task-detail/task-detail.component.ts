@@ -42,13 +42,17 @@ import { StatusBadgeComponent } from '../../../../shared/components/status-badge
         align-items: center;
         justify-content: center;
         z-index: 1000;
+        padding: 16px;
+        box-sizing: border-box;
       }
       .panel {
         background: #1e293b;
         border-radius: 16px;
         padding: 32px;
         max-width: 520px;
-        width: 90%;
+        width: 100%;
+        max-height: calc(100vh - 32px);
+        overflow-y: auto;
         position: relative;
         font-family: 'Plus Jakarta Sans', sans-serif;
         color: #f1f5f9;

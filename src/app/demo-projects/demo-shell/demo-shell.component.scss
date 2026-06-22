@@ -91,4 +91,33 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  min-width: 0;
+}
+
+@media (max-width: 640px) {
+  .demo-topbar {
+    padding: 0 12px;
+    gap: 8px;
+  }
+
+  .source-link {
+    display: none;
+  }
+
+  .back-btn {
+    font-size: 0;
+    padding: 6px 8px;
+
+    .back-arrow {
+      font-size: 15px;
+    }
+  }
+
+  .demo-label {
+    font-size: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
+  }
 }

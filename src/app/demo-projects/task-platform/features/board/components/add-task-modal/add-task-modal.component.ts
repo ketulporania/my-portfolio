@@ -46,7 +46,9 @@ import { Task } from '../../../../core/services/task.service';
         background: #1e293b;
         border-radius: 12px;
         padding: 24px;
-        width: 400px;
+        width: min(400px, calc(100vw - 32px));
+        max-height: calc(100vh - 32px);
+        overflow-y: auto;
         font-family: 'Plus Jakarta Sans', sans-serif;
       }
       h3 {

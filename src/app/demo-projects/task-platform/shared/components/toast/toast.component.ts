@@ -51,6 +51,14 @@ import { NotificationService } from '../../../core/services/notification.service
           opacity: 1;
         }
       }
+
+      @media (max-width: 480px) {
+        .toast-container {
+          left: 16px;
+          right: 16px;
+          bottom: 16px;
+        }
+      }
     `,
   ],
 })

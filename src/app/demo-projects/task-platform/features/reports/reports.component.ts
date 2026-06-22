@@ -54,6 +54,7 @@ import { map } from 'rxjs';
       }
       .content {
         flex: 1;
+        min-width: 0;
       }
       .main {
         padding: 24px;
@@ -79,6 +80,26 @@ import { map } from 'rxjs';
         font-size: 32px;
         font-weight: 700;
         color: var(--tp-primary, #6366f1);
+      }
+
+      @media (max-width: 768px) {
+        .main {
+          padding: 16px;
+        }
+
+        .stats {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .value {
+          font-size: 24px;
+        }
+      }
+
+      @media (max-width: 400px) {
+        .stats {
+          grid-template-columns: 1fr;
+        }
       }
     `,
   ],

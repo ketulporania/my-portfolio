@@ -51,6 +51,7 @@ import { loadDashboard } from '../../store/dashboard/dashboard.actions';
       .main {
         flex: 1;
         padding: 24px;
+        min-width: 0;
       }
       h1 {
         margin: 0 0 8px;
@@ -76,6 +77,26 @@ import { loadDashboard } from '../../store/dashboard/dashboard.actions';
         margin: 0 0 12px;
         font-size: 14px;
         color: #94a3b8;
+      }
+
+      @media (max-width: 900px) {
+        .charts {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .main {
+          padding: 16px;
+        }
+
+        h1 {
+          font-size: 18px;
+        }
+
+        .chart-card {
+          padding: 16px;
+        }
       }
     `,
   ],

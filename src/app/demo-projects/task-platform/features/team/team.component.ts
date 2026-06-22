@@ -45,6 +45,7 @@ import { TpUser } from '../../core/services/tp-auth.service';
       }
       .content {
         flex: 1;
+        min-width: 0;
       }
       .main {
         padding: 24px;
@@ -75,6 +76,16 @@ import { TpUser } from '../../core/services/tp-auth.service';
         text-transform: uppercase;
         color: #10b981;
         font-weight: 600;
+      }
+
+      @media (max-width: 768px) {
+        .main {
+          padding: 16px;
+        }
+
+        .team-grid {
+          grid-template-columns: 1fr;
+        }
       }
     `,
   ],

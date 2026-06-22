@@ -43,6 +43,7 @@ export class Skills {
       skills: [
         { name: 'REST APIs', level: 'Expert' },
         { name: 'Node.js', level: 'Expert' },
+        { name: 'Express', level: 'Expert' },
         { name: 'Middleware', level: 'Expert' },
         { name: 'JWT Authentication', level: 'Expert' },
         { name: 'RBAC', level: 'Expert' },

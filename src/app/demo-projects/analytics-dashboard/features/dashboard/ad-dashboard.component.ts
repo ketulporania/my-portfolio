@@ -91,6 +91,7 @@ import { loadDashboard, startStream, stopStream } from '../../store/dashboard/da
       .main {
         flex: 1;
         padding: 24px;
+        min-width: 0;
       }
       .page-header {
         display: flex;
@@ -155,6 +156,47 @@ import { loadDashboard, startStream, stopStream } from '../../store/dashboard/da
       }
       .loading {
         color: #64748b;
+      }
+
+      @media (max-width: 900px) {
+        .charts-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .feed-card {
+          grid-column: span 1;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .main {
+          padding: 16px;
+        }
+
+        .page-header {
+          flex-wrap: wrap;
+          gap: 10px;
+          margin-bottom: 16px;
+        }
+
+        h1 {
+          font-size: 18px;
+        }
+
+        .kpi-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 12px;
+        }
+
+        .chart-card {
+          padding: 16px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .kpi-grid {
+          grid-template-columns: 1fr;
+        }
       }
     `,
   ],

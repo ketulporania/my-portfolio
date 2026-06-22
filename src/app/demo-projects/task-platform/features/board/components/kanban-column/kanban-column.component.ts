@@ -68,6 +68,13 @@ import { openTaskDetail } from '../../../../store/ui/ui.actions';
       .cdk-drag-preview {
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
       }
+
+      @media (max-width: 768px) {
+        .column {
+          min-width: 280px;
+          flex: 0 0 280px;
+        }
+      }
     `,
   ],
 })

@@ -36,6 +36,12 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
         background: rgba(99, 102, 241, 0.15);
         color: #f1f5f9;
       }
+
+      @media (max-width: 768px) {
+        .ad-sidebar {
+          display: none;
+        }
+      }
     `,
   ],
 })

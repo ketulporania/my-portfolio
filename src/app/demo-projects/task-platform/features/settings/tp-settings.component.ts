@@ -51,6 +51,7 @@ import { CanComponentDeactivate } from '../../core/guards/unsaved-changes.guard'
       }
       .content {
         flex: 1;
+        min-width: 0;
       }
       .main {
         padding: 24px;
@@ -95,6 +96,13 @@ import { CanComponentDeactivate } from '../../core/guards/unsaved-changes.guard'
         margin-left: 12px;
         color: #10b981;
         font-size: 13px;
+      }
+
+      @media (max-width: 768px) {
+        .main {
+          padding: 16px;
+          max-width: none;
+        }
       }
     `,
   ],

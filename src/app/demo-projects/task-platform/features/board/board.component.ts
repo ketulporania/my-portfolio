@@ -89,11 +89,13 @@ import { combineLatest, map } from 'rxjs';
         flex: 1;
         display: flex;
         flex-direction: column;
+        min-width: 0;
       }
       .board-header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 12px;
         padding: 16px 24px;
         font-family: 'Plus Jakarta Sans', sans-serif;
       }
@@ -109,6 +111,8 @@ import { combineLatest, map } from 'rxjs';
         border-radius: 8px;
         cursor: pointer;
         font-size: 13px;
+        white-space: nowrap;
+        flex-shrink: 0;
       }
       .board {
         display: flex;
@@ -116,6 +120,22 @@ import { combineLatest, map } from 'rxjs';
         padding: 0 24px 24px;
         overflow-x: auto;
         flex: 1;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      @media (max-width: 768px) {
+        .board-header {
+          padding: 12px 16px;
+        }
+
+        .board {
+          padding: 0 16px 16px;
+          gap: 12px;
+        }
+
+        h2 {
+          font-size: 16px;
+        }
       }
     `,
   ],

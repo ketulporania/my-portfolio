@@ -49,6 +49,8 @@ import { TpAuthService } from '../../core/services/tp-auth.service';
         justify-content: center;
         background: #0a0e1a;
         font-family: 'Plus Jakarta Sans', sans-serif;
+        padding: 16px;
+        box-sizing: border-box;
       }
       .card {
         width: 100%;
@@ -57,6 +59,7 @@ import { TpAuthService } from '../../core/services/tp-auth.service';
         background: #1e293b;
         border-radius: 16px;
         border: 1px solid rgba(16, 185, 129, 0.25);
+        box-sizing: border-box;
       }
       h1 {
         color: #f1f5f9;
@@ -116,6 +119,12 @@ import { TpAuthService } from '../../core/services/tp-auth.service';
         color: #10b981;
         font-size: 11px;
         cursor: pointer;
+      }
+
+      @media (max-width: 480px) {
+        .card {
+          padding: 24px;
+        }
       }
     `,
   ],

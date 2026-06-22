@@ -43,6 +43,7 @@ import { loadProjects, selectProject } from '../../store/projects/projects.actio
       }
       .content {
         flex: 1;
+        min-width: 0;
       }
       .main {
         padding: 24px;
@@ -83,6 +84,16 @@ import { loadProjects, selectProject } from '../../store/projects/projects.actio
         border-radius: 8px;
         cursor: pointer;
         font-size: 13px;
+      }
+
+      @media (max-width: 768px) {
+        .main {
+          padding: 16px;
+        }
+
+        .grid {
+          grid-template-columns: 1fr;
+        }
       }
     `,
   ],
