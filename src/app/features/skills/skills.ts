@@ -15,6 +15,8 @@ export class Skills {
       title: 'Frontend',
       skills: [
         { name: 'Angular', level: 'Expert' },
+        { name: 'React', level: 'Advanced' },
+        { name: 'Next.js', level: 'Advanced' },
         { name: 'JavaScript', level: 'Advanced' },
         { name: 'TypeScript', level: 'Expert' },
         { name: 'RxJS', level: 'Expert' },
@@ -38,12 +40,29 @@ export class Skills {
       ]
     },
     {
+      icon: '⚛️',
+      title: 'React & Next.js Concepts',
+      skills: [
+        { name: 'Hooks', level: 'Advanced' },
+        { name: 'Context API', level: 'Advanced' },
+        { name: 'Custom Hooks', level: 'Advanced' },
+        { name: 'App Router', level: 'Advanced' },
+        { name: 'Server Components', level: 'Advanced' },
+        { name: 'SSR / SSG', level: 'Advanced' },
+        { name: 'API Routes', level: 'Advanced' },
+        { name: 'Next.js Middleware', level: 'Intermediate' },
+      ]
+    },
+    {
       icon: '🔗',
       title: 'Backend & APIs',
       skills: [
         { name: 'REST APIs', level: 'Expert' },
         { name: 'Node.js', level: 'Expert' },
         { name: 'Express', level: 'Expert' },
+        { name: 'Prisma ORM', level: 'Advanced' },
+        { name: 'Socket.io', level: 'Advanced' },
+        { name: 'WebSockets', level: 'Advanced' },
         { name: 'Middleware', level: 'Expert' },
         { name: 'JWT Authentication', level: 'Expert' },
         { name: 'RBAC', level: 'Expert' },

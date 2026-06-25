@@ -11,6 +11,7 @@ export interface PortfolioProject {
   contributions?: string[];
   tags?: string[];
   demoRoute?: string;
+  externalDemo?: boolean;
   githubUrl?: string;
   featured?: boolean;
   isLiveDemo?: boolean;
@@ -113,6 +114,26 @@ export class Projects {
         'RoleGuard (Admin/Member/Viewer), CanDeactivate, TenantResolver',
         'HTTP Interceptor injecting X-Tenant-ID header',
         'Per-tenant CSS variable theming applied at runtime',
+      ],
+    },
+    {
+      id: 'pulse',
+      title: 'Pulse — Real-Time Chat Application',
+      domain: 'Full Stack',
+      description:
+        'Real-time messaging platform with instant delivery, online presence, typing indicators, and persistent chat history. Built with a Next.js frontend and a Node.js backend powered by WebSockets.',
+      tags: ['React', 'Next.js', 'Node.js', 'Express', 'Socket.io', 'Prisma', 'TypeScript'],
+      demoRoute: 'https://realtime-chat-three-gamma.vercel.app',
+      externalDemo: true,
+      featured: true,
+      isLiveDemo: true,
+      accentColor: '#ec4899',
+      highlights: [
+        'Real-time messaging & typing indicators via Socket.io',
+        'Next.js App Router with React client components',
+        'Prisma ORM for users, rooms & message persistence',
+        'Express REST API with JWT authentication',
+        'Online presence, read receipts & scalable event handling',
       ],
     },
   ];

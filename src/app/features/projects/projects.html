@@ -70,15 +70,18 @@
               }
             </div>
 
-            @if (project.isLiveDemo && project.demoRoute) {
-              <a [routerLink]="project.demoRoute" class="btn btn-primary">
-                <span>View Live Demo</span>
-                <span class="btn-arrow">→</span>
-              </a>
-            } @else if (project.githubUrl) {
-              <a [href]="project.githubUrl" target="_blank" rel="noopener" class="btn btn-outline">
-                View Project ↗
-              </a>
+            @if (project.demoRoute) {
+              @if (project.externalDemo) {
+                <a [href]="project.demoRoute" target="_blank" rel="noopener" class="btn btn-primary">
+                  <span>View Live Demo</span>
+                  <span class="btn-arrow">→</span>
+                </a>
+              } @else {
+                <a [routerLink]="project.demoRoute" class="btn btn-primary">
+                  <span>View Live Demo</span>
+                  <span class="btn-arrow">→</span>
+                </a>
+              }
             }
           </div>
         </div>
