@@ -110,7 +110,7 @@ export class Projects {
         'JWT Authentication',
         'Multer',
       ],
-      demoRoute: 'https://full-stack-assesment-pink.vercel.app/',
+      demoRoute: 'https://user-profile-management-pink.vercel.app/',
       externalDemo: true,
       githubUrl: 'https://github.com/ketulporania/full-stack-mean',
       featured: true,
