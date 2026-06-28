@@ -1,0 +1,123 @@
+.experience-section {
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 120px;
+    background: linear-gradient(to bottom, rgba(34, 211, 238, 0.2), transparent);
+    pointer-events: none;
+  }
+}
+
+.experience-card {
+  padding: 1.75rem;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 1.75rem;
+    bottom: 1.75rem;
+    width: 2px;
+    border-radius: 9999px;
+    background: linear-gradient(to bottom, var(--pf-accent), rgba(99, 102, 241, 0.35));
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+.experience-card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.experience-card__role {
+  margin: 0;
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--pf-text);
+}
+
+.experience-card__company {
+  margin: 0.25rem 0 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--pf-accent);
+}
+
+.experience-card__type {
+  margin: 0.25rem 0 0;
+  color: var(--pf-text-muted);
+  font-size: 0.875rem;
+}
+
+.experience-card__duration {
+  flex-shrink: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  background: var(--pf-bg-alt);
+  border: 1px solid var(--pf-border);
+  color: var(--pf-text-body);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  width: fit-content;
+}
+
+.experience-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+.experience-card__list {
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  li {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+    color: var(--pf-text-body);
+    font-size: 0.9375rem;
+    line-height: 1.65;
+  }
+}
+
+.experience-card__check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+  border-radius: 50%;
+  background: var(--pf-accent-soft);
+  border: 1px solid rgba(34, 211, 238, 0.25);
+  color: var(--pf-accent);
+  font-size: 0.625rem;
+}

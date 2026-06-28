@@ -1,0 +1,79 @@
+.page-shell {
+  position: relative;
+  isolation: isolate;
+  overflow-x: hidden;
+}
+
+.page-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+  background: var(--pf-bg);
+}
+
+.page-bg__mesh {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 50% at 20% -10%, rgba(34, 211, 238, 0.11), transparent 50%),
+    radial-gradient(ellipse 60% 40% at 80% 10%, rgba(99, 102, 241, 0.09), transparent 45%),
+    radial-gradient(ellipse 50% 30% at 50% 100%, rgba(16, 185, 129, 0.06), transparent 40%);
+  animation: meshPulse 12s ease-in-out infinite alternate;
+}
+
+@keyframes meshPulse {
+  0% {
+    opacity: 0.85;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+}
+
+.page-bg__grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.035) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, black 0%, black 60%, transparent 100%);
+}
+
+.page-bg__orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  animation: pfFloat 18s ease-in-out infinite;
+
+  &--1 {
+    top: 8%;
+    left: -5%;
+    width: 420px;
+    height: 420px;
+    background: rgba(34, 211, 238, 0.13);
+    animation-delay: 0s;
+  }
+
+  &--2 {
+    top: 45%;
+    right: -8%;
+    width: 380px;
+    height: 380px;
+    background: rgba(99, 102, 241, 0.11);
+    animation-delay: -6s;
+  }
+
+  &--3 {
+    bottom: 5%;
+    left: 30%;
+    width: 320px;
+    height: 320px;
+    background: rgba(167, 139, 250, 0.09);
+    animation-delay: -12s;
+  }
+}

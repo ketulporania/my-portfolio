@@ -1,0 +1,44 @@
+.strength-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 1.125rem;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(34, 211, 238, 0.04), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover {
+    transform: translateX(4px);
+
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+.strength-card__icon {
+  font-size: 1.375rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.strength-card__label {
+  margin: 0;
+  font-weight: 600;
+  color: var(--pf-text);
+}
+
+.strength-card__desc {
+  margin: 0.25rem 0 0;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--pf-text-muted);
+}

@@ -1,18 +1,33 @@
 import { Component } from '@angular/core';
+import { ScrollRevealDirective } from '../../shared/directives/scroll-reveal.directive';
+
+export interface SkillItem {
+  name: string;
+  level: 'Expert' | 'Advanced' | 'Intermediate';
+}
+
+export interface SkillCategory {
+  icon: string;
+  title: string;
+  description: string;
+  accent: string;
+  skills: SkillItem[];
+}
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [],
+  imports: [ScrollRevealDirective],
   templateUrl: './skills.html',
-  styleUrl: './skills.scss'
+  styleUrl: './skills.scss',
 })
 export class Skills {
-
-  skillCategories = [
+  skillCategories: SkillCategory[] = [
     {
-      icon: '🅰️',
+      icon: 'FE',
       title: 'Frontend',
+      description: 'Modern UI development with component-driven architecture and reactive patterns.',
+      accent: '#22d3ee',
       skills: [
         { name: 'Angular', level: 'Expert' },
         { name: 'React', level: 'Advanced' },
@@ -24,11 +39,13 @@ export class Skills {
         { name: 'Tailwind CSS', level: 'Advanced' },
         { name: 'Signals', level: 'Advanced' },
         { name: 'HTML / CSS', level: 'Expert' },
-      ]
+      ],
     },
     {
-      icon: '🔧',
+      icon: 'NG',
       title: 'Angular Concepts',
+      description: 'Enterprise Angular patterns for scalable, maintainable applications.',
+      accent: '#ef4444',
       skills: [
         { name: 'Lazy Loading', level: 'Expert' },
         { name: 'Route Guards', level: 'Expert' },
@@ -37,11 +54,13 @@ export class Skills {
         { name: 'Change Detection', level: 'Advanced' },
         { name: 'Angular CDK', level: 'Advanced' },
         { name: 'Dynamic Components', level: 'Advanced' },
-      ]
+      ],
     },
     {
-      icon: '⚛️',
-      title: 'React & Next.js Concepts',
+      icon: 'RN',
+      title: 'React & Next.js',
+      description: 'Full-stack React ecosystem with server rendering and modern routing.',
+      accent: '#818cf8',
       skills: [
         { name: 'Hooks', level: 'Advanced' },
         { name: 'Context API', level: 'Advanced' },
@@ -51,11 +70,13 @@ export class Skills {
         { name: 'SSR / SSG', level: 'Advanced' },
         { name: 'API Routes', level: 'Advanced' },
         { name: 'Next.js Middleware', level: 'Intermediate' },
-      ]
+      ],
     },
     {
-      icon: '🔗',
+      icon: 'BE',
       title: 'Backend & APIs',
+      description: 'RESTful services, real-time communication, and secure authentication layers.',
+      accent: '#10b981',
       skills: [
         { name: 'REST APIs', level: 'Expert' },
         { name: 'Node.js', level: 'Expert' },
@@ -66,11 +87,23 @@ export class Skills {
         { name: 'Middleware', level: 'Expert' },
         { name: 'JWT Authentication', level: 'Expert' },
         { name: 'RBAC', level: 'Expert' },
-      ]
+      ],
     },
     {
-      icon: '🛠️',
+      icon: 'DB',
+      title: 'Databases',
+      description: 'Relational and document databases used across FinTech and full-stack projects.',
+      accent: '#a78bfa',
+      skills: [
+        { name: 'MongoDB', level: 'Advanced' },
+        { name: 'PostgreSQL', level: 'Advanced' },
+      ],
+    },
+    {
+      icon: 'TL',
       title: 'Tools & AI',
+      description: 'Development workflow, collaboration, and AI-assisted productivity.',
+      accent: '#f59e0b',
       skills: [
         { name: 'Git / GitHub', level: 'Expert' },
         { name: 'Postman', level: 'Expert' },
@@ -79,17 +112,31 @@ export class Skills {
         { name: 'Cursor', level: 'Advanced' },
         { name: 'M365 Copilot', level: 'Advanced' },
         { name: 'Vitest', level: 'Intermediate' },
-      ]
-    }
+      ],
+    },
   ];
 
-  getLevelColor(level: string): string {
+  levelClass(level: string): string {
     switch (level) {
-      case 'Expert': return 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/30';
-      case 'Advanced': return 'bg-blue-500/20 text-blue-300 border border-blue-500/30';
-      case 'Intermediate': return 'bg-slate-500/20 text-slate-300 border border-slate-500/30';
-      default: return 'bg-slate-500/20 text-slate-400';
+      case 'Expert':
+        return 'skill-pill--expert';
+      case 'Advanced':
+        return 'skill-pill--advanced';
+      case 'Intermediate':
+        return 'skill-pill--intermediate';
+      default:
+        return 'skill-pill--intermediate';
     }
   }
 
+  levelDots(level: string): number {
+    switch (level) {
+      case 'Expert':
+        return 3;
+      case 'Advanced':
+        return 2;
+      default:
+        return 1;
+    }
+  }
 }

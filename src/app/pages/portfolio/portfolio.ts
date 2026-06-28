@@ -11,5 +11,6 @@ import { Contact } from '../../features/contact/contact';
   selector: 'app-portfolio',
   imports: [Navbar, Home, About, Skills, Experience, Projects, Contact],
   templateUrl: './portfolio.html',
+  styleUrl: './portfolio.scss',
 })
 export class Portfolio {}

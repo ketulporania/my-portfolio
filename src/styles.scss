@@ -37,6 +37,7 @@ body {
   height: 100%;
 }
 @import 'tailwindcss';
+@import './styles/_portfolio.scss';
 
 html {
   scroll-behavior: smooth;

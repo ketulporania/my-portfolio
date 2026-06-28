@@ -1,0 +1,97 @@
+/* Shared availability status badge — imported by home + contact */
+.pf-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.5625rem 1.25rem 0.5625rem 1rem;
+  border-radius: 9999px;
+  background: linear-gradient(
+    135deg,
+    rgba(16, 185, 129, 0.18) 0%,
+    rgba(34, 211, 238, 0.1) 100%
+  );
+  border: 1px solid rgba(52, 211, 153, 0.45);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 0 0 1px rgba(16, 185, 129, 0.08),
+    0 6px 28px rgba(16, 185, 129, 0.2);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #34d399;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      105deg,
+      transparent 35%,
+      rgba(255, 255, 255, 0.1) 50%,
+      transparent 65%
+    );
+    transform: translateX(-120%);
+    animation: pfStatusShine 5s ease-in-out infinite;
+    pointer-events: none;
+  }
+}
+
+.pf-status-badge__indicator {
+  position: relative;
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #34d399;
+  box-shadow: 0 0 12px rgba(52, 211, 153, 0.7);
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -5px;
+    border-radius: 50%;
+    border: 2px solid rgba(52, 211, 153, 0.5);
+    animation: pfStatusRing 2.2s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+  }
+}
+
+.pf-status-badge__text {
+  position: relative;
+  z-index: 1;
+  line-height: 1.25;
+  color: #6ee7b7;
+}
+
+@keyframes pfStatusRing {
+  0% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  70%,
+  100% {
+    transform: scale(1.75);
+    opacity: 0;
+  }
+}
+
+@keyframes pfStatusShine {
+  0%,
+  72%,
+  100% {
+    transform: translateX(-120%);
+  }
+  88% {
+    transform: translateX(120%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pf-status-badge::after,
+  .pf-status-badge__indicator::before {
+    animation: none !important;
+  }
+}
